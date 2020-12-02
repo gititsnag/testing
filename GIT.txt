@@ -1,0 +1,67 @@
+git --version -----to check version
+git --init    -----initilize git
+git config --global user.name "test"  -----it creates name for git config file
+git config --global user.email "test@test.com"  -----it creates email for git
+git config --global --list  -----it shows the global configuration done
+when working on local machine. it uses 3 sections ... 
+1. Working directory or work space.
+2. Staging Area
+3. Local reposotory
+ 1. working directory is a folder where the developer create all the code and the files present in this folder are initially called Untracked files.
+
+ 2. Staging Area - intermediate buffer zone into which the files are moved before version control strats.
+ 
+3. Local reposorty - it is a location where the version controlling happes. files in this location called as commeted files.
+ 
+git init - to initiaze a folder as git reposotory, it create a hidden folder called .git where it store all the configuration necessary for Git.
+
+touch filename  ----- to create a file. ex. touch test.txt
+
+git add filename  ----- which used to move a file form working directory to staging area
+
+git reset filename/git rm --cached filename   ----- which used to move a file form staging area to working directory
+
+git commit -m  "message for identification"  ----- which used to move files from staging area to Local reposotory
+
+
+git status   ----- to check the status of untracked and staged files.
+
+git log      ----- to see the list of commits done
+
+git log --oneline   ----- to see the log for the servers 
+
+.gitignore -----this is a special configuration file which is used to store all the private files information, any files whose name is saved in .gitignore will no longer be accessed by git.
+
+for ex: touch file1 file2 file3 file4 file 5
+
+cat file1 > .gitignore
+
+
+branching.
+
+git branch -----to see the list of all the local branches
+git branch -a  ----- to see the list of all the local branches and remote ( ex : github)
+git branch branchname  ----- to create a new branch 
+
+git checkout branchname ----- to  move in to a branch
+
+git checkout -b branchname  ----- to crate and move in to branch
+
+to merge the brach with master branch , we need to get in to master branch and merge
+git merge branchname ----- to merge the branch name
+
+
+deleting branch
+git branch -D branchname  ----- to delete branch which is not merged, this is also called Hard delete.
+git branch -d branchname  ----- to delete bracnh which is merged. this is softdelete.
+
+
+
+
+
+
+
+
+ 
+
+
